@@ -1,6 +1,6 @@
 import { initStore } from './store';
 
-const configureStore = () => {
+const configureProductsStore = () => {
   const actions = {
     TOGGLE_FAV: (curState, productId) => {
       const prodIndex = curState.products.findIndex((p) => p.id === productId);
@@ -45,4 +45,4 @@ const configureStore = () => {
   });
 };
 
-export default configureStore;
+export default configureProductsStore;
